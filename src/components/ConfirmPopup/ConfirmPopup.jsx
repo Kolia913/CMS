@@ -11,6 +11,7 @@ const ConfirmPopup = ({text, onConfirm, onClose}) => {
 
   const confirm = () => {
     onConfirm()
+    close()
   }
 
   return (

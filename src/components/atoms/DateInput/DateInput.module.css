@@ -5,3 +5,7 @@
   line-height: 18px;
   padding: 5px 10px;
 }
+
+input::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+}

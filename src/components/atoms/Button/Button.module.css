@@ -7,12 +7,17 @@
   border: 1px solid #4A4A4A;
 }
 
+.disabled {
+  cursor: auto;
+  opacity: 0.6;
+}
+
 .button__text {
   font-size: 17px;
   line-height: 19px;
 }
 
-.button:hover {
+.button:not(.disabled):hover {
   background-color: #4A4A4A;
   color: #fff;
   transition: 0.3s;

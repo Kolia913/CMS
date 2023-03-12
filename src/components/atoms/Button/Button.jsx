@@ -6,7 +6,7 @@ import styles from './Button.module.css';
 const Button = ({text, outlineThin = false, className, children, ...props}) => {
   return (
     <button 
-      className={cn([styles.button, outlineThin && styles.borderThin, className])} 
+      className={cn([styles.button, outlineThin && styles.borderThin, props.disabled && styles.disabled, className])} 
       {...props}
     >
       {text && <span className={styles.button__text}>{text}</span>}

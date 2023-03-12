@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select {
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  border-radius: 0;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 5px 10px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.placeholder {
+  color: #CCCCCC;
+}
+
+.arrow {
+  fill: #CCCCCC;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
