@@ -1,0 +1,26 @@
+.widget {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid #979797;
+  padding: 20px 70px 10px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.widget__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4A4A4A;
+}
+
+.widget__content {
+
+}
+
+.widget__contentList {
+
+}
+
+.widget__contentListItem {
+  color: #4A4A4A;
+}

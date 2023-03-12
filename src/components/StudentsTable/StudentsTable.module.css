@@ -1,0 +1,56 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table__checkbox {
+  margin: 0 auto;
+  align-self: center;
+}
+
+.table__headerItem {
+  padding: 0 30px;
+  height: 60px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.table__headerItem:nth-child(1) {
+  width: 70px;
+}
+
+.table__headerItem:nth-child(2) {
+  width: 220px;
+}
+
+.table__headerItem:nth-child(4) {
+  width: 80px;
+}
+
+.table__headerItem:nth-child(5) {
+  width: 160px;
+}
+
+.table__headerItem:nth-child(6) {
+  width: 80px;
+}
+
+.table__headerItem:nth-child(7) {
+  width: 160px;
+}
+
+
+.table__bodyColumn {
+  padding: 0px 30px;
+  height: 60px;
+  font-weight: bold;
+  text-align: center;
+  overflow-x: scroll;
+  max-width: 300px;
+}
+
+.table__btnOption {
+  width: 35px;
+  height: 35px;
+  margin: 0px 2px;
+}

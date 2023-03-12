@@ -1,0 +1,11 @@
+.status {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #D8D8D8;
+  margin: 0 auto;
+}
+
+.online {
+  background-color: #689E39;
+}

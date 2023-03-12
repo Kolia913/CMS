@@ -1,0 +1,49 @@
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard__charts {
+  flex: 2
+}
+.dashboard_chartsButtons {
+  padding-left: 50px;
+}
+.dashboard__buttonDay {
+  margin-right: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+.dashboard__buttonMonth {
+  padding: 10px 20px 10px 20px;
+}
+
+.dashboard__chartsBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.dashboard__widgets {
+  flex: 1;
+  margin-top: 100px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard__widgetsInfo {
+  max-height: 180px;
+  margin-bottom: 20px;
+}
+.dashboard__widgetsTask {
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+
+.dashboard__widgetsNotifications {
+  max-height: 260px;
+}

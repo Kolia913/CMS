@@ -1,0 +1,35 @@
+.menu {
+  width: 200px;
+  height: calc(100vh - 95px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  padding-left: 45px;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.menu__links > li {
+  margin-bottom: 20px;
+}
+
+.menu__linksItem {
+  color: #4A4A4A;
+  font-size: 20px;
+  line-height: 22px;
+  cursor: pointer;
+
+}
+
+.menu__linksItem:hover {
+  font-weight: bold;
+}
+
+.menu__linksItem_active {
+  font-weight: bold;
+}
