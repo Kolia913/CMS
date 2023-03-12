@@ -7,7 +7,7 @@ const AgeChart = ({title, labels, data}) => {
 
   const chartOptions = useMemo (() => {
     return {
-      responsive: true,
+      responsive: false,
       plugins: {
         legend: {
           display: false
@@ -182,6 +182,8 @@ const AgeChart = ({title, labels, data}) => {
         <Doughnut 
           className={styles.chart__content} 
           data={chartData} 
+          height="300px"
+          width="500px"
           options={chartOptions}
           plugins={[counter, doughnutLabels]}
         />

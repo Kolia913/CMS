@@ -26,6 +26,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
 .header__notifications {
@@ -100,4 +101,43 @@
   line-height: 20px;
   color: #fff;
   cursor: pointer;
+}
+
+/* Hamburger styles */
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #FFF;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #b8b7b7;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .header__info {
+    flex-direction: column;
+    margin-top: 118px;
+    background-color: #9B9B9B;
+    width: 100%;
+    display: none;
+  }
+  
+  .header__info.expanded {
+ 
+  display: block;
+}
 }

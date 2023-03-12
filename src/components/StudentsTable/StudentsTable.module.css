@@ -41,7 +41,7 @@ table, th, td {
 
 
 .table__bodyColumn {
-  padding: 0px 30px;
+  padding: 0 30px;
   height: 60px;
   font-weight: bold;
   text-align: center;
@@ -53,4 +53,17 @@ table, th, td {
   width: 35px;
   height: 35px;
   margin: 0px 2px;
+}
+@media screen and (max-width: 1144px) {
+  .table__bodyColumn{
+max-width: 50px;
+font-size: smaller;
+padding: 0px;
+ }
+ .table__headerItem{
+  padding: 0 0px;
+ }
+ .table__headerItem {
+  width: 5%;
+ }
 }

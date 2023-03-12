@@ -4,11 +4,10 @@ import { Line } from 'react-chartjs-2';
 import styles from './GenderChart.module.css';
 
 const chartOptions = {
-  responsive: true,
-
   plugins: {
+    responsive: false,
     legend: {
-      position: 'right',
+      position: 'center',
     }
   },
 };
@@ -40,6 +39,8 @@ const GenderChart = ({labels, femaleData, maleData, title}) => {
     <div className={styles.chart__wrapper}>
       <Line 
         className={styles.chart__content} 
+        width="100%"
+        height="100%"
         data={chartData} 
         options={chartOptions}
       />

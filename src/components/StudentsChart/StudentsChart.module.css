@@ -25,6 +25,11 @@
 }
 
 .chart__content {
-  width: 100%;
+  width: 90%;
   max-height: 200px;
+}
+@media screen and(max-width:1144px) {
+  .chart__content{
+    width:70%
+  }
 }

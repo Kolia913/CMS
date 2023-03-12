@@ -33,3 +33,11 @@
 .menu__linksItem_active {
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .menu{
+    width: 80px;
+    padding-left: 10px;
+    display: none;
+  }
+}
+

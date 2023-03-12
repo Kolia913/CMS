@@ -35,7 +35,8 @@ const AddPopup = ({groups = [], defaultStudent = null, onCreate, onEdit = undefi
 
 
   const onDateChange = (date) => {
-    let dateString = date.toLocaleDateString().split('/').reverse();
+    let dateString = date.toLocaleDateString().replace(/\.\//g, '/').split('/').reverse();
+    console.log(dateString);
     setDate(dateString.join('-'))
   }
 

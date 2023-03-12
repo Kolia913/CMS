@@ -1,6 +1,7 @@
 import cn from 'classnames'
 import React, { useState } from 'react'
 import { BsBell } from 'react-icons/bs'
+import { GiHamburgerMenu } from 'react-icons/gi';
 import animations from './BellAnimation.module.css'
 import styles from './Header.module.css'
 
@@ -8,6 +9,8 @@ const Header = () => {
 
   const [isNewMessages, setIsNewMessages] = useState(false)
   const [isMessagesRead, setIsMessagesRead] = useState(false)
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
+
 
   const animate = () => {
     setIsNewMessages(true)
@@ -22,7 +25,10 @@ const Header = () => {
       <div className={styles.header__logo}>
         <h1 className={styles.header__logoText}>CMS</h1>
       </div>
-      <div className={styles.header__info}>
+      <button className={styles.hamburger} onClick={() => {setIsNavExpanded(!isNavExpanded);}}>
+         <GiHamburgerMenu />
+      </button>
+      <div className={isNavExpanded ? styles.header__info.expanded : styles.header__info} >
         <div 
           className={styles.header__notifications} 
           onClick={animate} 
@@ -35,7 +41,11 @@ const Header = () => {
           <img className={styles.header__profileImage} src="/assets/images/thumbnail.jpeg" alt="avatar" />
           <span className={styles.header__profileName}>James Bond</span>
         </div>
+        
       </div>
+      
+     
+      
     </header>
   )
 }
