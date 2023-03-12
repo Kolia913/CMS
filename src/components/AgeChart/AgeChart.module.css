@@ -1,0 +1,28 @@
+.chart {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.chart__title {
+  color: #333333;
+  align-self: center;
+  font-size: 20px;
+  line-height: 48px;
+}
+
+.chart__wrapper {
+  width: 100%;
+  max-height: 300px;
+}
+
+.chart__content {
+  width: 100%;
+  max-height: 300px;
+}
+@media screen and (max-width: 768px) {
+  
+}

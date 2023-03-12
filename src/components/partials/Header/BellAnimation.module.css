@@ -1,0 +1,11 @@
+.bellAnimation {
+  animation: shake .3s infinite;
+}
+
+@keyframes shake {
+  0%  { transform: rotate(0deg);  }
+  30% { transform: rotate(30deg);  }
+  60% { transform: rotate(0deg);  }
+  90% { transform: rotate(-30deg);  }
+  100%{ transform: rotate(0deg); }
+}
